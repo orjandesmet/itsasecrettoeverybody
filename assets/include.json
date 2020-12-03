@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../../../node_modules/ngx-library-assets/include-schema.json",
+  "libs": [
+    {
+      "name": "shared-i18n"
+    }
+  ]
+}

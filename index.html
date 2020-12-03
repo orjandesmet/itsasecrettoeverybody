@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>MyTotalSource</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" class="favicon" />
+    <script type="text/javascript" src="assets/env.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap"
+    />
+    <script type="text/javascript">
+      if (__env['environment'] && __env['environment'] !== 'prod') {
+        var icon = document.head.getElementsByClassName('favicon').item(0);
+        icon.href = 'assets/favicon-' + __env['environment'] + '.png';
+        var title = document.head.getElementsByTagName('title').item(0);
+        title.innerText = '[' + __env['environment'].toUpperCase() + '] ' + title.innerText;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  <script src="runtime.js" type="module"></script><script src="polyfills.js" type="module"></script><script src="styles.js" type="module"></script><script src="vendor.js" type="module"></script><script src="main.js" type="module"></script></body>
+</html>
